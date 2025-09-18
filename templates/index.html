@@ -1,24 +1,57 @@
 {% extends "base.html" %}
-{% block title %}Inicio - Mi CV{% endblock %}
+{% block title %}Inicio - CV de Edson Cahuana{% endblock %}
+
 {% block content %}
 <section class="hero">
-  <img src="{{ url_for('static', filename='img/foto_perfil.jpg') }}" alt="Foto de [Tu Nombre]" class="profile-img">
+  <img src="{{ url_for('static', filename='imagenes/perfil_cv.jpg') }}" alt="Foto de Edson Cahuana" class="profile-img">
   <div class="hero-body">
-    <h1>Hola, soy <strong>[Tu Nombre]</strong></h1>
-    <p>Soy desarrollador/a web con foco en aplicaciones con Python y Flask. Me gusta construir interfaces limpias y accesibles.</p>
+    <h1>Hola, soy <strong>Edson Cahuana</strong></h1>
+    <p>Estudiante de Ingeniería de Sistemas en la Universidad Nacional del Altiplano y técnico en Contabilidad. 
+       Apasionado por la tecnología, el análisis de datos y la mejora de procesos.</p>
     <a class="cta" href="{{ url_for('contact') }}">Contáctame</a>
   </div>
 </section>
 
 <div class="sections">
+  <!-- Información personal -->
   <div class="section-card">
-    <h3>Resumen</h3>
-    <p>Breve descripción profesional — 2-3 líneas. Destaca rol, stack principal y objetivo.</p>
+    <h3>Información Personal</h3>
+    <p>📍 Puno, Perú</p>
+    <p>📧 70494455@est.unap.edu.pe</p>
+    <p>📱 +51 972596787</p>
+    <p>🎂 20 años</p>
   </div>
 
-  <aside class="section-card">
-    <h3>Datos</h3>
-    <p>📍 Lima, Perú<br>✉️ correo@ejemplo.com<br>🔗 linkedin.com/in/tu-perfil</p>
-  </aside>
+  <!-- Experiencia -->
+  <div class="section-card">
+    <h3>Experiencia</h3>
+    <p><b>Academia deportiva PYME (Puno)</b><br>
+       Apoyo en mejora de procesos internos.<br>
+       <small>(Experiencia práctica en gestión y organización)</small></p>
+  </div>
+
+  <!-- Educación -->
+  <div class="section-card">
+    <h3>Educación</h3>
+    <ul>
+      <li><b>Universidad Nacional del Altiplano</b> – Ingeniería de Sistemas (En curso)</li>
+      <li><b>Instituto José Antonio Encinas</b> – Técnico en Contabilidad (Finalizado)</li>
+    </ul>
+  </div>
+
+  <!-- Habilidades técnicas -->
+  <div class="section-card">
+    <h3>Lenguajes y Tecnologías</h3>
+    <p>PHP, C++, Python, JavaScript, CSS, Prolog</p>
+    <p>Frameworks: Bootstrap</p>
+    <p>Herramientas: Ofimática</p>
+  </div>
+
+  <!-- Idiomas -->
+  <div class="section-card">
+    <h3>Idiomas</h3>
+    <p>Inglés – Básico</p>
+    <p>Español – Nativo</p>
+  </div>
 </div>
 {% endblock %}
