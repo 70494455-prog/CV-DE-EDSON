@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Inicio - Mi CV{% endblock %}
+{% block content %}
+<section class="hero">
+  <img src="{{ url_for('static', filename='img/foto_perfil.jpg') }}" alt="Foto de [Tu Nombre]" class="profile-img">
+  <div class="hero-body">
+    <h1>Hola, soy <strong>[Tu Nombre]</strong></h1>
+    <p>Soy desarrollador/a web con foco en aplicaciones con Python y Flask. Me gusta construir interfaces limpias y accesibles.</p>
+    <a class="cta" href="{{ url_for('contact') }}">Contáctame</a>
+  </div>
+</section>
+
+<div class="sections">
+  <div class="section-card">
+    <h3>Resumen</h3>
+    <p>Breve descripción profesional — 2-3 líneas. Destaca rol, stack principal y objetivo.</p>
+  </div>
+
+  <aside class="section-card">
+    <h3>Datos</h3>
+    <p>📍 Lima, Perú<br>✉️ correo@ejemplo.com<br>🔗 linkedin.com/in/tu-perfil</p>
+  </aside>
+</div>
+{% endblock %}
